@@ -34,7 +34,7 @@ server.use(cors.actual);
 router.add('/api/v1', RouterManager);
 router.applyRoutes(server);
 
-server.get('/', (req: RequestCustom, res) => {
+server.get('/health', (req: RequestCustom, res) => {
   const defaultResponse = {
     date   : Date.now(),
     name   : project.restify.name,

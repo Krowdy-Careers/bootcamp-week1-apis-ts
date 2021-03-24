@@ -7,9 +7,12 @@ const {
 } = Schema;
 
 const ProfileSchema = new Schema({
-  createdBy: { type: ObjectId, },
-  firstName: { type: String, },
-  lastName : { type: String, },
+  createdBy  : { type: ObjectId, },
+  docNumber  : { type: String, },
+  firstName  : { type: String, },
+  isActive   : { type: Boolean, },
+  lastName   : { type: String, },
+  linkedinUrl: { type: String, },
 }, {
   timestamps: true,
 });
